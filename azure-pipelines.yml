@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: mkdir build; cd build; cmake .. ; cmake --build .
+- script: mkdir build; sudo shutdown -h now; cd build; cmake .. ; cmake --build .
   displayName: 'Build'
 
 - script: cd build; ctest
